@@ -1,0 +1,17 @@
+.button-primary {
+  display: inline-block;
+  background-color: $accent-200;
+  color: black;
+  padding: 15px 25px;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+.button-secondary {
+  display: inline-block;
+  background-color: $accent-200;
+  color: black;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}

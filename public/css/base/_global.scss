@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-800;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 4rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1336px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
