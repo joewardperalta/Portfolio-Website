@@ -14,5 +14,17 @@
   {
     "skillTitle": "C/C++",
     "skillPercentage": "60"
+  },
+  {
+    "skillTitle": "OracleSQL",
+    "skillPercentage": "50"
+  },
+  {
+    "skillTitle": "NodeJS",
+    "skillPercentage": "20"
+  },
+  {
+    "skillTitle": "MongoDB",
+    "skillPercentage": "10"
   }
 ]
