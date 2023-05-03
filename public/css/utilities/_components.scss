@@ -1,3 +1,4 @@
+// Button Style
 .button-primary {
   display: inline-block;
   background-color: $accent-200;
@@ -16,6 +17,7 @@
   font-weight: 600;
 }
 
+// Heading Style
 .section-heading {
   display: inline-block;
   background-color: $secondary-400;
@@ -26,6 +28,7 @@
   text-align: center;
 }
 
+// Skill List
 #skills-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
