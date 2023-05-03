@@ -20,7 +20,11 @@ app.get("/", (req, res) => {
 
 // Navigate to about page
 app.get("/about", (req, res) => {
-  res.render("about", { layout: "default" });
+  const skills = require("./skills.json");
+  res.render("about", {
+    data: skills,
+    layout: "default",
+  });
 });
 
 // Navigate to contact page
@@ -53,6 +57,7 @@ app.get("/terms", (req, res) => {
   res.render("terms", { layout: "default" });
 });
 
+// Sends back a 404 page
 app.use((req, res) => {
   res.status(404).send("<h1>Page Not Found</h1>");
 });

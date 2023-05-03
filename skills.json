@@ -1,0 +1,18 @@
+[
+  {
+    "skillTitle": "HTML",
+    "skillPercentage": "70"
+  },
+  {
+    "skillTitle": "CSS",
+    "skillPercentage": "80"
+  },
+  {
+    "skillTitle": "Javascript",
+    "skillPercentage": "40"
+  },
+  {
+    "skillTitle": "C/C++",
+    "skillPercentage": "60"
+  }
+]

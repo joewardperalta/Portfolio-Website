@@ -1,0 +1,71 @@
+<main>
+  {{! About Section }}
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-heading">About Me</h2>
+      <p>
+        Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis.
+        Ipsum a arcu cursus vitae congue mauris rhoncus. Quis viverra nibh cras
+        pulvinar. In fermentum posuere urna nec. Imperdiet proin fermentum leo
+        vel orci porta non. Ridiculus mus mauris vitae ultricies. Aliquet risus
+        feugiat in ante metus. Vitae sapien pellentesque habitant morbi
+        tristique senectus et netus et. Eleifend donec pretium vulputate sapien
+        nec sagittis aliquam. Id interdum velit laoreet id donec ultrices
+        tincidunt arcu.
+      </p>
+
+      <p>
+        Sit amet justo donec enim diam vulputate ut pharetra. Vitae nunc sed
+        velit dignissim. Faucibus pulvinar elementum integer enim neque volutpat
+        ac. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut.
+        Senectus et netus et malesuada fames ac turpis. Eget egestas purus
+        viverra accumsan in nisl nisi scelerisque eu. Sit amet volutpat
+        consequat mauris nunc congue nisi vitae. Ac orci phasellus egestas
+        tellus rutrum tellus pellentesque eu tincidunt. Egestas maecenas
+        pharetra convallis posuere. Nunc consequat interdum varius sit amet
+        mattis vulputate enim. Quis commodo odio aenean sed adipiscing diam.
+        Sagittis nisl rhoncus mattis rhoncus urna neque. Vivamus at augue eget
+        arcu dictum varius duis at consectetur. Fames ac turpis egestas
+        maecenas. Tincidunt arcu non sodales neque sodales.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat
+        vivamus at augue. Enim blandit volutpat maecenas volutpat blandit
+        aliquam. Arcu cursus euismod quis viverra nibh. Pulvinar neque laoreet
+        suspendisse interdum consectetur libero id faucibus. Sem nulla pharetra
+        diam sit amet nisl suscipit. Diam ut venenatis tellus in metus vulputate
+        eu scelerisque felis. Sit amet nisl purus in. Venenatis urna cursus eget
+        nunc scelerisque viverra mauris in aliquam. Tempor orci eu lobortis
+        elementum nibh tellus molestie nunc non. Ultrices vitae auctor eu augue.
+        Risus viverra adipiscing at in tellus integer. Netus et malesuada fames
+        ac turpis egestas sed tempus. Consectetur adipiscing elit pellentesque
+        habitant morbi tristique senectus et. Et tortor at risus viverra
+        adipiscing at in. Aliquam purus sit amet luctus venenatis lectus magna.
+        Volutpat ac tincidunt vitae semper quis lectus nulla. Dolor morbi non
+        arcu risus quis.
+      </p>
+    </div>
+  </section>
+
+  {{! Skills Section }}
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-heading">My Skills</h2>
+      <div id="skills-list">
+        {{#each data}}
+          <div class="skill">
+            <div class="skill-description">
+              <span class="skill-title">{{skillTitle}}</span>
+              <span class="skill-percentage">{{skillPercentage}}%</span>
+            </div>
+
+            <div class="skill-meter-background">
+              <div class="skill-meter-{{skillPercentage}}"></div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+</main>
