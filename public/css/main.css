@@ -71,33 +71,15 @@
   margin-right: 56px;
 }
 
-.button-primary {
-  display: inline-block;
-  background-color: hsl(50, 100%, 80%);
-  color: black;
-  padding: 15px 25px;
-  font-size: 1.125rem;
-  text-decoration: none;
-}
-
-.button-secondary {
+.button {
   display: inline-block;
   background-color: hsl(50, 100%, 80%);
   color: black;
   padding: 15px 40px;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 1.125rem;
   font-weight: 600;
-}
-
-.section-heading {
-  display: inline-block;
-  background-color: hsl(208, 100%, 60%);
-  color: black;
-  padding: 15px 65px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
+  max-width: fit-content;
 }
 
 #skills-list {
@@ -107,62 +89,87 @@
 }
 #skills-list .skill-meter-background {
   height: 10px;
-  background-color: hsl(208, 100%, 80%);
+  background-color: hsl(50, 100%, 80%);
   width: 100%;
 }
 #skills-list .skill-meter-10 {
   height: 10px;
   width: 10%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-20 {
   height: 10px;
   width: 20%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-30 {
   height: 10px;
   width: 30%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-40 {
   height: 10px;
   width: 40%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-50 {
   height: 10px;
   width: 50%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-60 {
   height: 10px;
   width: 60%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-70 {
   height: 10px;
   width: 70%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-80 {
   height: 10px;
   width: 80%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-90 {
   height: 10px;
   width: 90%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-meter-100 {
   height: 10px;
   width: 100%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills-list .skill-description {
   display: flex;
   justify-content: space-between;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 20px 30px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card .card-title {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+.card i {
+  font-size: 2rem;
+}
+.card:hover {
+  transform: translateY(-20px);
 }
 
 *,
@@ -187,7 +194,10 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 a {
@@ -197,6 +207,7 @@ a {
 
 img {
   width: 100%;
+  border-radius: 10px;
 }
 
 li {
@@ -205,7 +216,10 @@ li {
 
 p {
   font-size: 1.125rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
 .container {
@@ -217,6 +231,14 @@ p {
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
 }
 
 #nav {
@@ -236,6 +258,11 @@ p {
 }
 #nav #nav-menu a {
   font-size: 1rem;
+}
+#nav #nav-menu #contact {
+  font-weight: 400;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 #nav #nav-brand {
   font-size: 2rem;
@@ -258,9 +285,23 @@ p {
 #skills {
   background-color: hsl(0, 0%, 20%);
 }
+#skills #skills-list {
+  width: 100%;
+}
+
+#links {
+  background-color: hsl(0, 0%, 10%);
+}
+#links #cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
 #footer {
   background-color: hsl(0, 0%, 0%);
   text-align: end;
   padding: 20px 0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

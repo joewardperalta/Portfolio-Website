@@ -20,7 +20,10 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 a {
@@ -30,6 +33,7 @@ a {
 
 img {
   width: 100%;
+  border-radius: $border-soft;
 }
 
 li {
@@ -38,7 +42,11 @@ li {
 
 p {
   font-size: 1.125rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .container {
@@ -50,4 +58,12 @@ p {
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
 }
