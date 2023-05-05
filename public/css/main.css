@@ -73,13 +73,33 @@
 
 .button {
   display: inline-block;
-  background-color: hsl(50, 100%, 80%);
-  color: black;
-  padding: 15px 40px;
-  border-radius: 10px;
+  color: hsl(0, 0%, 80%);
+  border: 2px solid hsl(50, 100%, 60%);
   font-size: 1.125rem;
   font-weight: 600;
   max-width: fit-content;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 500ms;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsl(50, 100%, 60%);
+  transition: 500ms cubic-bezier(0.29, 0.28, 0.37, 0.98);
+  z-index: -1;
+}
+.button:hover {
+  color: black;
+}
+.button:hover::before {
+  width: 100%;
 }
 
 #skills-list {
@@ -151,8 +171,7 @@
   background-color: rgb(255, 255, 255);
   color: black;
   padding: 20px 30px;
-  border-radius: 10px;
-  transition: 300ms;
+  transition: 300ms all ease-in-out;
 }
 .card img {
   width: 100%;
@@ -170,6 +189,13 @@
 }
 .card:hover {
   transform: translateY(-20px);
+  box-shadow: hsl(208, 100%, 20%) 0px 19px 38px, hsl(208, 100%, 20%) 0px 15px 12px;
+}
+.card:hover .card-title {
+  color: hsl(208, 100%, 20%);
+}
+.card:hover i {
+  color: hsl(208, 100%, 20%);
 }
 
 *,
@@ -207,7 +233,6 @@ a {
 
 img {
   width: 100%;
-  border-radius: 10px;
 }
 
 li {
@@ -260,7 +285,6 @@ p:last-child {
   font-size: 1rem;
 }
 #nav #nav-menu #contact {
-  font-weight: 400;
   padding-right: 25px;
   padding-left: 25px;
 }

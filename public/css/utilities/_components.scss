@@ -1,13 +1,35 @@
 // Button Style
 .button {
   display: inline-block;
-  background-color: $accent-200;
-  color: black;
-  padding: 15px 40px;
-  border-radius: $border-soft;
+  color: $primary-100;
+  border: 2px solid $accent-400;
   font-size: 1.125rem;
   font-weight: 600;
   max-width: fit-content;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 500ms;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $accent-400;
+    transition: 500ms cubic-bezier(0.29, 0.28, 0.37, 0.98);
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+    color: black;
+  }
 }
 
 // Skill List
@@ -84,8 +106,7 @@
   background-color: rgb(255, 255, 255);
   color: black;
   padding: 20px 30px;
-  border-radius: $border-soft;
-  transition: 300ms;
+  transition: 300ms all ease-in-out;
 
   img {
     width: 100%;
@@ -106,5 +127,14 @@
 
   &:hover {
     transform: translateY(-20px);
+    box-shadow: $secondary-800 0px 19px 38px, $secondary-800 0px 15px 12px;
+
+    .card-title {
+      color: $secondary-800;
+    }
+
+    i {
+      color: $secondary-800;
+    }
   }
 }
