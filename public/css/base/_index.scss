@@ -55,12 +55,10 @@
 
 #links {
   background-color: $primary-800;
+}
 
-  #cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+#projects {
+  background-color: $primary-700;
 }
 
 #footer {

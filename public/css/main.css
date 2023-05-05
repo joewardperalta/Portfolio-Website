@@ -109,58 +109,58 @@
 }
 #skills-list .skill-meter-background {
   height: 10px;
-  background-color: hsl(50, 100%, 80%);
+  background-color: hsl(208, 100%, 80%);
   width: 100%;
 }
 #skills-list .skill-meter-10 {
   height: 10px;
   width: 10%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-20 {
   height: 10px;
   width: 20%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-30 {
   height: 10px;
   width: 30%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-40 {
   height: 10px;
   width: 40%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-50 {
   height: 10px;
   width: 50%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-60 {
   height: 10px;
   width: 60%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-70 {
   height: 10px;
   width: 70%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-80 {
   height: 10px;
   width: 80%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-90 {
   height: 10px;
   width: 90%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-meter-100 {
   height: 10px;
   width: 100%;
-  background-color: hsl(50, 100%, 50%);
+  background-color: hsl(208, 100%, 50%);
 }
 #skills-list .skill-description {
   display: flex;
@@ -170,19 +170,21 @@
 .card {
   background-color: rgb(255, 255, 255);
   color: black;
-  padding: 20px 30px;
   transition: 300ms all ease-in-out;
 }
-.card img {
-  width: 100%;
-  object-fit: cover;
-}
-.card .card-title {
+.card h3 {
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 900;
   margin-bottom: 8px;
   margin-right: 5px;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card .description {
+  padding: 20px 30px;
 }
 .card i {
   font-size: 2rem;
@@ -191,11 +193,17 @@
   transform: translateY(-20px);
   box-shadow: hsl(208, 100%, 20%) 0px 19px 38px, hsl(208, 100%, 20%) 0px 15px 12px;
 }
-.card:hover .card-title {
+.card:hover h3 {
   color: hsl(208, 100%, 20%);
 }
 .card:hover i {
   color: hsl(208, 100%, 20%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
 }
 
 *,
@@ -316,10 +324,9 @@ p:last-child {
 #links {
   background-color: hsl(0, 0%, 10%);
 }
-#links #cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+
+#projects {
+  background-color: hsl(0, 0%, 20%);
 }
 
 #footer {
