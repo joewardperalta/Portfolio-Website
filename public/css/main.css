@@ -171,6 +171,7 @@
   background-color: rgb(255, 255, 255);
   color: black;
   transition: 300ms all ease-in-out;
+  border: 2px solid white;
 }
 .card h3 {
   display: inline-block;
