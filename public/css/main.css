@@ -259,58 +259,58 @@ p:last-child {
 }
 #skills #skills-list .skill-meter-background {
   height: 10px;
-  background-color: hsl(208, 100%, 80%);
+  background-color: hsl(50, 100%, 80%);
   width: 100%;
 }
 #skills #skills-list .skill-meter-10 {
   height: 10px;
   width: 10%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-20 {
   height: 10px;
   width: 20%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-30 {
   height: 10px;
   width: 30%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-40 {
   height: 10px;
   width: 40%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-50 {
   height: 10px;
   width: 50%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-60 {
   height: 10px;
   width: 60%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-70 {
   height: 10px;
   width: 70%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-80 {
   height: 10px;
   width: 80%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-90 {
   height: 10px;
   width: 90%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-meter-100 {
   height: 10px;
   width: 100%;
-  background-color: hsl(208, 100%, 50%);
+  background-color: hsl(50, 100%, 50%);
 }
 #skills #skills-list .skill-description {
   display: flex;
