@@ -122,17 +122,14 @@
 .card .description {
   padding: 20px 30px;
 }
-.card i {
-  font-size: 2rem;
+.card svg {
+  width: 1.75rem;
 }
 .card:hover {
   transform: translateY(-20px);
   box-shadow: hsl(208, 100%, 20%) 0px 19px 38px, hsl(208, 100%, 20%) 0px 15px 12px;
 }
 .card:hover h3 {
-  color: hsl(208, 100%, 20%);
-}
-.card:hover i {
   color: hsl(208, 100%, 20%);
 }
 
@@ -156,12 +153,6 @@ body {
   background-color: hsl(0, 0%, 10%);
   color: white;
   font-size: 1rem;
-}
-
-form input,
-form textarea {
-  font-size: 1rem;
-  color: white;
 }
 
 h1 {

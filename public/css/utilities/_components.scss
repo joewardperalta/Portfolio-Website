@@ -54,8 +54,8 @@
     padding: 20px 30px;
   }
 
-  i {
-    font-size: 2rem;
+  svg {
+    width: 1.75rem;
   }
 
   &:hover {
@@ -63,10 +63,6 @@
     box-shadow: $accent-800 0px 19px 38px, $accent-800 0px 15px 12px;
 
     h3 {
-      color: $accent-800;
-    }
-
-    i {
       color: $accent-800;
     }
   }
