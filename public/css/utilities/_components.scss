@@ -60,10 +60,6 @@
 
   &:hover {
     transform: translateY(-20px);
-    box-shadow: $accent-800 0px 19px 38px, $accent-800 0px 15px 12px;
-
-    h3 {
-      color: $accent-800;
-    }
+    box-shadow: $primary-900 0px 19px 38px, $primary-700 0px 15px 12px;
   }
 }

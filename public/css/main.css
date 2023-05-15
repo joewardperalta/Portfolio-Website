@@ -127,10 +127,7 @@
 }
 .card:hover {
   transform: translateY(-20px);
-  box-shadow: hsl(208, 100%, 20%) 0px 19px 38px, hsl(208, 100%, 20%) 0px 15px 12px;
-}
-.card:hover h3 {
-  color: hsl(208, 100%, 20%);
+  box-shadow: hsl(0, 0%, 0%) 0px 19px 38px, hsl(0, 0%, 20%) 0px 15px 12px;
 }
 
 .grid {
@@ -186,6 +183,7 @@ body {
 h1 {
   margin-bottom: 16px;
   font-size: 4rem;
+  font-weight: 900;
 }
 
 h2 {
@@ -231,7 +229,7 @@ p:last-child {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 80px;
   align-items: center;
   justify-content: center;
 }
@@ -266,75 +264,6 @@ p:last-child {
 
 #resume {
   background-color: hsl(0, 0%, 20%);
-}
-
-#skills {
-  background-color: hsl(0, 0%, 20%);
-}
-#skills #skills-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 100%;
-}
-#skills #skills-list .skill-meter-background {
-  height: 10px;
-  background-color: hsl(50, 100%, 80%);
-  width: 100%;
-}
-#skills #skills-list .skill-meter-10 {
-  height: 10px;
-  width: 10%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-20 {
-  height: 10px;
-  width: 20%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-30 {
-  height: 10px;
-  width: 30%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-40 {
-  height: 10px;
-  width: 40%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-50 {
-  height: 10px;
-  width: 50%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-60 {
-  height: 10px;
-  width: 60%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-70 {
-  height: 10px;
-  width: 70%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-80 {
-  height: 10px;
-  width: 80%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-90 {
-  height: 10px;
-  width: 90%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-meter-100 {
-  height: 10px;
-  width: 100%;
-  background-color: hsl(50, 100%, 50%);
-}
-#skills #skills-list .skill-description {
-  display: flex;
-  justify-content: space-between;
 }
 
 #links {

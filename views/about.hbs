@@ -49,27 +49,4 @@
       </div>
     </div>
   </section>
-
-  {{! Skills Section }}
-  <section class="section" id="skills">
-    <div class="container content">
-      <h2>My Skills</h2>
-
-      <div id="skills-list">
-        {{#each data}}
-          <div class="skill">
-            <div class="skill-description">
-              <span class="skill-title">{{skillTitle}}</span>
-              <span class="skill-percentage">{{skillPercentage}}%</span>
-            </div>
-
-            <div class="skill-meter-background">
-              <div class="skill-meter-{{skillPercentage}}"></div>
-            </div>
-          </div>
-        {{/each}}
-      </div>
-    </div>
-  </section>
-
 </main>
