@@ -135,8 +135,36 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
+}
+
+.grid-template-columns-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 *,
@@ -203,9 +231,9 @@ p:last-child {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 40px;
   align-items: center;
-  gap: 80px;
+  justify-content: center;
 }
 
 #nav {
@@ -234,14 +262,6 @@ p:last-child {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-}
-
-#hero #hero-content {
-  display: grid;
-  grid-template-columns: 1fr 0.75fr;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
 }
 
 #resume {
