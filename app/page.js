@@ -6,26 +6,14 @@ import Headline from "@/components/Wrappers/Headline";
 import Action from "@/components/Wrappers/Action";
 import Title from "@/components/Typography/Title";
 import Subheading from "@/components/Typography/Subheading";
-import Navbar from "@/components/Navigation/Navbar";
 import Image from "next/image";
-import Nav from "@/components/Navigation/Nav";
-import NavItem from "@/components/Navigation/NavItem";
-import Link from "next/link";
-import HamburgerButton from "@/components/Navigation/HamburgerButton";
+import MainNav from "@/components/Navigation/MainNav";
 
 export default function Home() {
   return (
     <>
       <header>
-        <Navbar>
-          <Image
-            src="/img/JLANCE logo.svg"
-            alt="jlance logo"
-            width={87}
-            height={19}
-          />
-          <HamburgerButton />
-        </Navbar>
+        <MainNav />
       </header>
       <main>
         <section className="bg-hero bg-cover bg-center " id="hero">
