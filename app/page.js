@@ -1,9 +1,11 @@
-import { PrimaryButton, SecondaryButton } from "@/components/Buttons";
-import Column from "@/components/Column";
-import Container from "@/components/Container";
-import Headline from "@/components/Headline";
-import Action from "@/components/Action";
-import { Subheading, Title } from "@/components/Typography";
+import PrimaryButton from "@/components/Buttons/PrimaryButton";
+import SecondaryButton from "@/components/Buttons/SecondaryButton";
+import Column from "@/components/Wrappers/Column";
+import Container from "@/components/Wrappers/Container";
+import Headline from "@/components/Wrappers/Headline";
+import Action from "@/components/Wrappers/Action";
+import Title from "@/components/Typography/Title";
+import Subheading from "@/components/Typography/Subheading";
 
 export default function Home() {
   return (
