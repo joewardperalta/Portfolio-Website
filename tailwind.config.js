@@ -27,6 +27,9 @@ module.exports = {
         "subheading-sm": ["1rem", "1.5"],
         "subheading-base": ["1.25rem", "1.5"],
       },
+      padding: {
+        "navbar-py": "2.125rem",
+      },
     },
   },
   plugins: [],
