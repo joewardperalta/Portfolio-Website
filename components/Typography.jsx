@@ -1,24 +1,22 @@
 import { kaisei_opti, inter } from "@/app/fonts";
 
-export function Title({ children }) {
+export function Title({ children, className = "" }) {
   return (
     <h1
-      className={
-        kaisei_opti.className +
-        " text-4xl leading-[1.2] font-medium tablet:text-6xl tablet:mb-7"
-      }
+      className={`${kaisei_opti.className} ${className} text-title-sm font-medium tablet:text-title-lg tablet:mb-7`}
     >
       {children}
     </h1>
   );
 }
 
-export function H2({ children }) {
+export function H2({ children, className = "" }) {
   return (
     <h2
       className={
         kaisei_opti.className +
-        " text-2xl leading-[1.2] font-medium mb-6 tablet:text-4xl tablet:mb-7"
+        " text-2xl leading-[1.2] font-medium mb-6 tablet:text-4xl tablet:mb-7 " +
+        className
       }
     >
       {children}
@@ -26,8 +24,12 @@ export function H2({ children }) {
   );
 }
 
-export function Subheading({ children }) {
+export function Subheading({ children, className = "" }) {
   return (
-    <p className={inter.className + " text-xl leading-[1.5]"}>{children}</p>
+    <p
+      className={`${inter.className} ${className} text-subheading-sm tablet:text-subheading-base`}
+    >
+      {children}
+    </p>
   );
 }
