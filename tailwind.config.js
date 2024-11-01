@@ -11,6 +11,7 @@ module.exports = {
         primary: "#005EFC",
         black: "#272727",
         gray: "#828282",
+        "gray-light": "#EEEEEE",
         white: "#FEFEFE",
       },
       screens: {
@@ -20,15 +21,6 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/img/wallpaper mockup.jpg')",
-      },
-      fontSize: {
-        "title-sm": ["2.375rem", "1.2"],
-        "title-lg": ["3.5rem", "1.2"],
-        "subheading-sm": ["1rem", "1.5"],
-        "subheading-base": ["1.25rem", "1.5"],
-      },
-      padding: {
-        "navbar-py": "2.125rem",
       },
     },
   },

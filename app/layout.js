@@ -1,5 +1,6 @@
 import "./globals.css";
 import { inter } from "./fonts";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Script src="https://kit.fontawesome.com/d924478ec2.js"></Script>
+      </body>
     </html>
   );
 }

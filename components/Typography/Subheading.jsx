@@ -3,7 +3,8 @@ import { inter } from "@/app/fonts";
 export default function Subheading({ children, className = "" }) {
   return (
     <p
-      className={`${inter.className} ${className} text-subheading-sm tablet:text-subheading-base`}
+      className={`${inter.className} ${className} 
+      text-lg`}
     >
       {children}
     </p>

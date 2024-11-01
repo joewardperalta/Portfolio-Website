@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "avatar": {
+      "src": "/img/monitor.gif",
+      "alt": "A gif of monitor showing a wireframe."
+    },
+    "title": "Crafting Unique Designs That Capture Your Brand&apos;s Essence",
+    "description": "My website design service focuses on creating visually appealing and user-friendly interfaces."
+  },
+  {
+    "id": 2,
+    "avatar": {
+      "src": "/img/web-developer.gif",
+      "alt": "A gif of monitor showing a web development process."
+    },
+    "title": "Crafting Unique Designs That Capture Your Brand&apos;s Essence",
+    "description": "My website design service focuses on creating visually appealing and user-friendly interfaces."
+  },
+  {
+    "id": 3,
+    "avatar": {
+      "src": "/img/monitor.gif",
+      "alt": "A gif of monitor showing a maintenance process."
+    },
+    "title": "Ensuring Your Website Runs Smoothly with My Maintenance Services",
+    "description": "My maintenance services keep your website updated, secure, and performing optimally."
+  }
+]

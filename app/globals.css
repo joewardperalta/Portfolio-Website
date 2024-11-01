@@ -5,6 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #005efc;
+  --black: #272727;
+  --gray: #828282;
+  --gray-light: #eeeeee;
+  --white: #fefefe;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,4 +22,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  color: var(--black);
 }

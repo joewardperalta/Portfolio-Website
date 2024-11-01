@@ -11,7 +11,7 @@ export default function MainNav() {
   }
 
   return (
-    <div className="py-navbar-py absolute px-6 flex justify-between w-full">
+    <div className="flex justify-between w-full absolute px-6 py-8">
       <div className="z-50 flex justify-between w-full">
         <Image
           src="/img/JLANCE logo.svg"
@@ -20,10 +20,10 @@ export default function MainNav() {
           height={19}
         />
 
-        <button className="flex flex-col py-1.5 gap-1" onClick={handleClick}>
-          <div className="w-7 h-1 bg-white"></div>
-          <div className="w-7 h-1 bg-white"></div>
-          <div className="w-7 h-1 bg-white"></div>
+        <button className="flex flex-col py-1.5 gap-1.5" onClick={handleClick}>
+          <div className="w-7 h-0.5 bg-white"></div>
+          <div className="w-7 h-0.5 bg-white"></div>
+          <div className="w-7 h-0.5 bg-white"></div>
         </button>
       </div>
 

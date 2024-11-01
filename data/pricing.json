@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Personal",
+    "description": "Best for personal website or portfolio.",
+    "price": 19,
+    "features": [
+      "5 pages",
+      "Website design",
+      "Hosting setup",
+      "1 free domain",
+      "Email support",
+      "Mobile responsive",
+      "Website maintenance",
+      "Secured website",
+      "Lifetime support",
+      "Basic SEO optimization"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Ecommerce",
+    "description": "Best for small Ecommerce store.",
+    "price": 59,
+    "features": [
+      "35 pages",
+      "2 free domain",
+      "Business email",
+      "Payment processing",
+      "Ecommerce integration",
+      "250 premium photos",
+      "50gb storage space",
+      "Performance optimization",
+      "Intermediate SEO optimization"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Ecommerce Plus+",
+    "description": "Best for large Ecommerce store.",
+    "price": 149,
+    "features": [
+      "Unlimited pages",
+      "5 free domain",
+      "Unlimited premium photos",
+      "Unlimited storage",
+      "AI image creation",
+      "Google analytics setup",
+      "Advanced SEO optimization",
+      "Social media integration"
+    ]
+  }
+]
