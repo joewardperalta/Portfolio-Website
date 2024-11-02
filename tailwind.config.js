@@ -17,7 +17,7 @@ module.exports = {
       screens: {
         desktop: "1440px",
         laptop: "1280px",
-        tablet: "834px",
+        tablet: "744px",
       },
       backgroundImage: {
         hero: "url('/img/wallpaper mockup.jpg')",
