@@ -4,7 +4,7 @@ export default function Subheading({ children, className = "" }) {
   return (
     <p
       className={`${inter.className} ${className} 
-      text-lg`}
+      text-lg tablet:text-xl`}
     >
       {children}
     </p>

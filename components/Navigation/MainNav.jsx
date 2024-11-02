@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRef } from "react";
+import Logo from "../Logo";
 
 export default function MainNav() {
   const navToggler = useRef(null);
@@ -13,12 +14,7 @@ export default function MainNav() {
   return (
     <div className="flex justify-between w-full absolute px-6 py-8">
       <div className="z-50 flex justify-between w-full">
-        <Image
-          src="/img/JLANCE logo.svg"
-          alt="jlance logo"
-          width={87}
-          height={19}
-        />
+        <Logo />
 
         <button className="flex flex-col py-1.5 gap-1.5" onClick={handleClick}>
           <div className="w-7 h-0.5 bg-white"></div>

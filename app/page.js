@@ -65,10 +65,10 @@ export default function Home() {
         <MainNav />
       </header>
       <main>
-        <section className="bg-hero bg-cover bg-center " id="hero">
-          <div className="bg-black/50">
-            <Wrapper>
-              <Container className="items-center h-screen">
+        <section className="bg-hero bg-cover bg-center h-screen " id="hero">
+          <div className="bg-black/50 h-full">
+            <Wrapper className="h-full">
+              <Container className="items-center h-full">
                 <Column>
                   <Headline className="flex flex-col items-center">
                     <Title className="text-center text-white">
@@ -111,14 +111,34 @@ export default function Home() {
                   </Subheading>
                 </Headline>
               </Column>
-              <Column>
-                <Image
-                  className="rounded-default"
-                  src="/img/Joeward Peralta Walking on Railway 1.jpg"
-                  alt="Joeward Peralta Walking on Railway with a big smile."
-                  width={2000}
-                  height={2000}
-                />
+              <Column className="flex gap-3">
+                <div className="w-full tablet:hidden">
+                  <Image
+                    className="rounded-md inline-block object-cover w-96 h-96"
+                    src="/img/Joeward Peralta Professional.jpg"
+                    alt="Joeward Peralta Walking on Railway with a big smile."
+                    width={2000}
+                    height={2000}
+                  />
+                </div>
+                <div className="w-full h-[470px] hidden tablet:block">
+                  <Image
+                    className="rounded-md inline-block object-cover object-center w-full h-full"
+                    src="/img/Joeward Peralta Walking on Railway 1.jpg"
+                    alt="Joeward Peralta Walking on Railway with a big smile."
+                    width={2000}
+                    height={2000}
+                  />
+                </div>
+                <div className="w-full h-[470px] hidden tablet:block">
+                  <Image
+                    className="rounded-md inline-block object-cover object-center w-full h-full"
+                    src="/img/Joeward Peralta Standing Between Railway.jpg"
+                    alt="Joeward Peralta Walking on Railway with a big smile."
+                    width={2000}
+                    height={2000}
+                  />
+                </div>
               </Column>
             </Container>
           </Wrapper>
@@ -135,7 +155,7 @@ export default function Home() {
                   </SectionHeading>
                 </Headline>
               </Column>
-              <Column className="flex flex-col gap-12">
+              <Column className="flex flex-col gap-12 justify-center">
                 {servicesData.map((service) => (
                   <Service key={service.id}>
                     <ServiceHead>
@@ -282,31 +302,17 @@ export default function Home() {
                   </Subheading>
                 </Headline>
               </Column>
-              <Column className="flex flex-col gap-6">
+              <Column className="flex flex-col items-center gap-6">
                 {pricingData.map((plan, index) => {
                   return (
                     <Pricing
                       key={plan.id}
-                      className={index == 1 ? "bg-black text-white" : ""}
-                    >
-                      <PricingHead>
-                        <PricingTitle>{plan.title}</PricingTitle>
-                        <PricingDescription>
-                          {plan.description}
-                        </PricingDescription>
-                        <PricingPrice>${plan.price}/mo</PricingPrice>
-                      </PricingHead>
-                      <PricingBody>
-                        <PricingFeatures>
-                          {plan.features.map((feature, index) => (
-                            <Feature key={index}>{feature}</Feature>
-                          ))}
-                        </PricingFeatures>
-                      </PricingBody>
-                      <PricingAction>
-                        <PrimaryButton>Get Started</PrimaryButton>
-                      </PricingAction>
-                    </Pricing>
+                      theme={index === 1 && "dark"}
+                      title={plan.title}
+                      description={plan.description}
+                      price={plan.price}
+                      features={plan.features}
+                    />
                   );
                 })}
               </Column>
@@ -373,7 +379,7 @@ export default function Home() {
 
         <section className="bg-black text-white">
           <Wrapper>
-            <Container>
+            <Container className="pb-8 border-b border-white">
               <Column className="mb-14">
                 <Headline>
                   <SectionHeading>
@@ -389,7 +395,7 @@ export default function Home() {
                   <PrimaryButton>Get Started</PrimaryButton>
                 </Action>
               </Column>
-              <Column className="flex pb-8 border-b border-white">
+              <Column className="flex">
                 <List className="w-full">
                   <ListTitle>Links</ListTitle>
                   <ListContainer>
@@ -423,11 +429,12 @@ export default function Home() {
                 </List>
               </Column>
             </Container>
-            <Container>
-              <Column className="pt-8 text-center">
+
+            <Container className="pt-8 ">
+              <Column className="text-center tablet:basis-1/3 tablet:text-start">
                 <p>&copy; 2024 JLANCE. All rights reserved.</p>
               </Column>
-              <Column className="flex gap-5 w-full justify-center">
+              <Column className="flex gap-5 justify-center tablet:basis-1/3 tablet:justify-end">
                 <Link
                   href="https://www.facebook.com/joewardperalta.joe/"
                   target="_blank"

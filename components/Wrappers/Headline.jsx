@@ -1,3 +1,3 @@
 export default function Headline({ children, className = "" }) {
-  return <div className={"mb-9 " + className}>{children}</div>;
+  return <div className={`${className} mb-9 tablet:mb-16`}>{children}</div>;
 }

@@ -1,5 +1,11 @@
-export function Service({ children }) {
-  return <div className="flex flex-col items-center">{children}</div>;
+export function Service({ children, className }) {
+  return (
+    <div
+      className={`${className} flex flex-col items-center w-full tablet:tablet:max-w-[35rem] tablet:mx-auto`}
+    >
+      {children}
+    </div>
+  );
 }
 
 export function ServiceHead({ children }) {
