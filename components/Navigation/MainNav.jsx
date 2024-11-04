@@ -7,9 +7,35 @@ export default function MainNav() {
   const navToggler = useRef(null);
   const navbar = useRef(null);
   const isFixed = useRef(false);
+  const isNavbarActive = useRef(false);
 
-  function handleClick() {
+  // disables the scrolling behavior of the page
+  function disableScrollEffect() {
+    document.body.classList.add(
+      "h-full",
+      "overflow-hidden",
+      "laptop:overflow-auto"
+    );
+  }
+
+  // enables the scrolling behavior of the page
+  function enableScrollEffect() {
+    document.body.classList.remove("h-full", "overflow-hidden");
+  }
+
+  // handle opening and closing of navbar
+  function handleNavbarActiveState() {
     navToggler.current.classList.toggle("hidden");
+    navbar.current.classList.add("fixed", "top-0", "left-0");
+
+    isNavbarActive.current = !isNavbarActive.current;
+
+    // disable scr
+    if (isNavbarActive.current) {
+      disableScrollEffect();
+    } else {
+      enableScrollEffect();
+    }
   }
 
   // if the user scroll down the page, make the navbar fixed on the top,
@@ -51,7 +77,7 @@ export default function MainNav() {
 
           <button
             className="flex flex-col py-1.5 gap-1.5 laptop:hidden"
-            onClick={handleClick}
+            onClick={handleNavbarActiveState}
           >
             <div className="w-7 h-0.5 bg-white"></div>
             <div className="w-7 h-0.5 bg-white"></div>
@@ -69,12 +95,24 @@ export default function MainNav() {
               className="text-center text-white 
               flex flex-col gap-10 laptop:flex-row"
             >
-              <Link href="#">Home</Link>
-              <Link href="#about">About</Link>
-              <Link href="#services">Services</Link>
-              <Link href="#projects">Projects</Link>
-              <Link href="#pricing">Pricing</Link>
-              <Link href="#contact">Contact</Link>
+              <Link onClick={handleNavbarActiveState} href="#">
+                Home
+              </Link>
+              <Link onClick={handleNavbarActiveState} href="#about">
+                About
+              </Link>
+              <Link onClick={handleNavbarActiveState} href="#services">
+                Services
+              </Link>
+              <Link onClick={handleNavbarActiveState} href="#projects">
+                Projects
+              </Link>
+              <Link onClick={handleNavbarActiveState} href="#pricing">
+                Pricing
+              </Link>
+              <Link onClick={handleNavbarActiveState} href="#contact">
+                Contact
+              </Link>
             </ul>
           </nav>
         </div>
