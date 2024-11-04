@@ -1,5 +1,11 @@
-export function Testimonial({ children }) {
-  return <div>{children}</div>;
+export function Testimonial({ children, className }) {
+  return (
+    <div
+      className={`${className} laptop:max-w-[924px] laptop:mx-auto laptop:text-center`}
+    >
+      {children}
+    </div>
+  );
 }
 
 export function TestimonialMessage({ children }) {

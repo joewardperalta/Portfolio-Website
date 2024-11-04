@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "image": {
+      "src": "/img/Laptop Mockup For TASC.jpeg",
+      "alt": "A laptop mockup screen showcasing the apostolic sanctuary of canada website."
+    },
+    "title": "Apostolic Sanctuary of Canada",
+    "description": "A professional and informative website for a local church that teaches about oneness meaning one God.",
+    "tags": ["UI/UX Design", "Responsive Layout", "Front-End Development"],
+    "website": "https://www.apostolicsanctuarycanada.ca/"
+  },
+  {
+    "id": 2,
+    "image": {
+      "src": "/img/Laptop Mockup For Insideout Window Coverings.jpeg",
+      "alt": "A laptop mockup screen showcasing the apostolic sanctuary of canada website."
+    },
+    "title": "Inside Out Window Coverings",
+    "description": "An online store that sell window blinds, shades, awning, drapery, skylight, and motorization.",
+    "tags": ["E-commerce", "Full-Stack Development", "Shopify"],
+    "website": "https://www.insideoutwindowcoverings.ca/"
+  }
+]

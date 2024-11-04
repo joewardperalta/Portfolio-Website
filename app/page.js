@@ -36,27 +36,18 @@ import {
   TestimonialAuthor,
   TestimonialMessage,
 } from "@/components/Cards/Testimonial";
-import {
-  Feature,
-  Pricing,
-  PricingAction,
-  PricingBody,
-  PricingDescription,
-  PricingFeatures,
-  PricingHead,
-  PricingPrice,
-  PricingTitle,
-} from "@/components/Cards/Pricing";
+import Pricing from "@/components/Cards/Pricing";
 import Form from "next/form";
 import TextArea from "@/components/Form/TextArea";
-
-// data
-import pricingData from "@/data/pricing.json";
-import servicesData from "@/data/services.json";
 import { FormInput } from "@/components/Form/FormInput";
 import { List, ListContainer, ListTitle } from "@/components/List";
 import Link from "next/link";
 import Wrapper from "@/components/Wrappers/Wrapper";
+
+// data
+import pricingData from "@/data/pricing.json";
+import servicesData from "@/data/services.json";
+import projectsData from "@/data/projects.json";
 
 export default function Home() {
   return (
@@ -97,11 +88,11 @@ export default function Home() {
           <Wrapper>
             <Container>
               <Column>
-                <Headline>
-                  <SectionHeading>
+                <Headline className="laptop:flex gap-36">
+                  <SectionHeading className="w-full">
                     Hello, I&apos;m Joeward Peralta
                   </SectionHeading>
-                  <Subheading>
+                  <Subheading className="w-full">
                     Passionate web developer with 1 year of experience, skilled
                     in creating clean and responsive websites using modern
                     technologies like React.js and Next.js. My focus is on
@@ -111,20 +102,22 @@ export default function Home() {
                   </Subheading>
                 </Headline>
               </Column>
+            </Container>
+            <Container>
               <Column className="flex gap-3">
-                <div className="w-full tablet:hidden">
+                <div className="w-full h-[470px] hidden tablet:block">
                   <Image
-                    className="rounded-md inline-block object-cover w-96 h-96"
-                    src="/img/Joeward Peralta Professional.jpg"
+                    className="rounded-md inline-block object-cover object-center w-full h-full"
+                    src="/img/Joeward Peralta Walking on Railway 1.jpg"
                     alt="Joeward Peralta Walking on Railway with a big smile."
                     width={2000}
                     height={2000}
                   />
                 </div>
-                <div className="w-full h-[470px] hidden tablet:block">
+                <div className="w-full h-[470px] tablet:hidden laptop:block">
                   <Image
                     className="rounded-md inline-block object-cover object-center w-full h-full"
-                    src="/img/Joeward Peralta Walking on Railway 1.jpg"
+                    src="/img/Joeward Peralta Professional.jpg"
                     alt="Joeward Peralta Walking on Railway with a big smile."
                     width={2000}
                     height={2000}
@@ -155,7 +148,9 @@ export default function Home() {
                   </SectionHeading>
                 </Headline>
               </Column>
-              <Column className="flex flex-col gap-12 justify-center">
+            </Container>
+            <Container>
+              <Column className="flex flex-col gap-12 justify-center laptop:flex-row">
                 {servicesData.map((service) => (
                   <Service key={service.id}>
                     <ServiceHead>
@@ -189,59 +184,37 @@ export default function Home() {
                   </SectionHeading>
                 </Headline>
               </Column>
-              <Column className="flex flex-col gap-12">
-                <Product>
-                  <ProductHead>
-                    <Image
-                      src="/img/Laptop Mockup For TASC.jpeg"
-                      alt="A laptop mockup screen showcasing the 
-                    apostolic sanctuary of canada website."
-                      width={2000}
-                      height={2000}
-                    />
-                  </ProductHead>
-                  <ProductBody>
-                    <ProductTitle>Apostolic Sanctuary of Canada</ProductTitle>
-                    <ProductDescription>
-                      A professional and informative website for a local church
-                      that teaches about oneness meaning one God.
-                    </ProductDescription>
-                    <ProductTag>
-                      <Tag>UI/UX Design</Tag>
-                      <Tag>Responsive Layout</Tag>
-                      <Tag>Front-End Development</Tag>
-                    </ProductTag>
-                  </ProductBody>
-                  <ProductAction>
-                    <TertiaryButton>View Project</TertiaryButton>
-                  </ProductAction>
-                </Product>
-                <Product>
-                  <ProductHead>
-                    <Image
-                      src="/img/Laptop Mockup For Insideout Window Coverings.jpeg"
-                      alt="A laptop mockup screen showcasing 
-                    the Insideout Window Coverings website."
-                      width={2000}
-                      height={2000}
-                    />
-                  </ProductHead>
-                  <ProductBody>
-                    <ProductTitle>Inside Out Window Coverings</ProductTitle>
-                    <ProductDescription>
-                      An online store that sell window blinds, shades, awning,
-                      drapery, skylight, and motorization.
-                    </ProductDescription>
-                    <ProductTag>
-                      <Tag>E-commerce</Tag>
-                      <Tag>Full-Stack Development</Tag>
-                      <Tag>Shopify</Tag>
-                    </ProductTag>
-                  </ProductBody>
-                  <ProductAction>
-                    <TertiaryButton>View Project</TertiaryButton>
-                  </ProductAction>
-                </Product>
+            </Container>
+            <Container>
+              <Column className="flex flex-col gap-12 laptop:flex-row">
+                {projectsData.map((project) => (
+                  <Product key={project.id}>
+                    <ProductHead>
+                      <Image
+                        src={project.image.src}
+                        alt={project.image.alt}
+                        width={2000}
+                        height={2000}
+                      />
+                    </ProductHead>
+                    <ProductBody>
+                      <ProductTitle>{project.title}</ProductTitle>
+                      <ProductDescription>
+                        {project.description}
+                      </ProductDescription>
+                      <ProductTag>
+                        {project.tags.map((tag, index) => (
+                          <Tag key={index}>{tag}</Tag>
+                        ))}
+                      </ProductTag>
+                    </ProductBody>
+                    <ProductAction>
+                      <TertiaryButton>
+                        <Link href={project.website}>View Project</Link>
+                      </TertiaryButton>
+                    </ProductAction>
+                  </Product>
+                ))}
               </Column>
             </Container>
           </Wrapper>
@@ -257,6 +230,8 @@ export default function Home() {
                   </SectionHeading>
                 </Headline>
               </Column>
+            </Container>
+            <Container>
               <Column>
                 <Testimonial>
                   <TestimonialMessage>
@@ -289,11 +264,11 @@ export default function Home() {
           </Wrapper>
         </section>
 
-        <section>
+        <section id="pricing">
           <Wrapper>
             <Container>
               <Column>
-                <Headline>
+                <Headline className="laptop:flex laptop:flex-col laptop:items-center">
                   <SectionHeading className="text-center">
                     Pricing Plans
                   </SectionHeading>
@@ -302,7 +277,9 @@ export default function Home() {
                   </Subheading>
                 </Headline>
               </Column>
-              <Column className="flex flex-col items-center gap-6">
+            </Container>
+            <Container>
+              <Column className="flex flex-col items-center gap-6 laptop:flex-row">
                 {pricingData.map((plan, index) => {
                   return (
                     <Pricing
@@ -322,7 +299,7 @@ export default function Home() {
 
         <section id="contact">
           <Wrapper>
-            <Container>
+            <Container className="laptop:gap-12">
               <Column>
                 <Headline>
                   <SectionHeading>Have something in mind?</SectionHeading>
@@ -331,8 +308,6 @@ export default function Home() {
                     contact me, and I will get back at you as soon as possible.
                   </Subheading>
                 </Headline>
-              </Column>
-              <Column>
                 <Form action="" className="space-y-9">
                   <FormInput
                     type="text"
@@ -365,8 +340,10 @@ export default function Home() {
                   </TertiaryButton>
                 </Form>
               </Column>
-              <Column className="rounded-md overflow-hidden mt-6">
+
+              <Column className="rounded-md overflow-hidden mt-6 laptop:mt-0">
                 <Image
+                  className="h-full object-cover"
                   src="/img/hand-woman-holding-mobile-smartphone-with-contact-us.jpg"
                   width={2000}
                   height={2000}
@@ -395,8 +372,8 @@ export default function Home() {
                   <PrimaryButton>Get Started</PrimaryButton>
                 </Action>
               </Column>
-              <Column className="flex">
-                <List className="w-full">
+              <Column className="laptop:flex laptop:justify-end laptop:gap-32">
+                <List>
                   <ListTitle>Links</ListTitle>
                   <ListContainer>
                     <List>
@@ -416,12 +393,9 @@ export default function Home() {
                     </List>
                   </ListContainer>
                 </List>
-                <List className="w-full">
+                <List>
                   <ListTitle>Help</ListTitle>
                   <ListContainer>
-                    <List>
-                      <Link href="#about">Cancel order</Link>
-                    </List>
                     <List>
                       <Link href="tel:6479013040">Call me</Link>
                     </List>

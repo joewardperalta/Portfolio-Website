@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useRef } from "react";
 import Logo from "../Logo";
 
@@ -12,7 +11,7 @@ export default function MainNav() {
   }
 
   return (
-    <div className="flex justify-between w-full absolute px-6 py-8">
+    <div className="flex justify-between w-full absolute px-6 py-8 tablet:px-10 laptop:px-16 laptop:max-w-screen-laptop laptop:left-1/2 laptop:translate-x-[-50%]">
       <div className="z-50 flex justify-between w-full">
         <Logo />
 
