@@ -37,7 +37,7 @@ export default function Pricing({
       </div>
 
       <div className="mt-8">
-        <PrimaryButton className="tablet:w-full">Get Started</PrimaryButton>
+        <PrimaryButton className="tablet:w-full">Select Plan</PrimaryButton>
       </div>
     </div>
   );

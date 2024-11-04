@@ -56,7 +56,7 @@ export default function Home() {
         <MainNav />
       </header>
       <main>
-        <section className="bg-hero bg-cover bg-center h-screen " id="hero">
+        <section className="bg-hero bg-cover bg-center h-screen " id="#hero">
           <div className="bg-black/50 h-full">
             <Wrapper className="h-full">
               <Container className="items-center h-full">
@@ -73,10 +73,14 @@ export default function Home() {
                     </Subheading>
                   </Headline>
                   <Action className="flex gap-7 flex-col justify-center tablet:flex-row">
-                    <PrimaryButton>Get Started</PrimaryButton>
-                    <SecondaryButton className="text-white">
-                      Learn More
-                    </SecondaryButton>
+                    <Link href="#pricing">
+                      <PrimaryButton>Get Started</PrimaryButton>
+                    </Link>
+                    <Link href="#about">
+                      <SecondaryButton className="text-white">
+                        Learn More
+                      </SecondaryButton>
+                    </Link>
                   </Action>
                 </Column>
               </Container>

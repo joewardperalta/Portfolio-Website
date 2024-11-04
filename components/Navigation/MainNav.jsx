@@ -95,7 +95,7 @@ export default function MainNav() {
               className="text-center text-white 
               flex flex-col gap-10 laptop:flex-row"
             >
-              <Link onClick={handleNavbarActiveState} href="#">
+              <Link onClick={handleNavbarActiveState} href="#hero">
                 Home
               </Link>
               <Link onClick={handleNavbarActiveState} href="#about">
