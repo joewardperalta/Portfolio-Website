@@ -56,23 +56,23 @@ export default function Home() {
         <MainNav />
       </header>
       <main>
-        <section className="bg-hero bg-cover bg-center h-screen " id="#hero">
-          <div className="bg-black/50 h-full">
+        <section className="h-screen bg-hero bg-cover bg-center" id="#hero">
+          <div className="h-full bg-black/50">
             <Wrapper className="h-full">
-              <Container className="items-center h-full">
+              <Container className="h-full items-center">
                 <Column>
                   <Headline className="flex flex-col items-center">
                     <Title className="text-center text-white">
                       Enhance your business visibility through my web
                       development services.
                     </Title>
-                    <Subheading className="text-center text-white hidden tablet:block tablet:max-w-[54.5rem]">
+                    <Subheading className="hidden text-center text-white tablet:block tablet:max-w-[54.5rem]">
                       I specialize in creating stunning websites tailored to
                       your needs. Let me help you establish a strong digital
                       footprint that attracts and retains customers.
                     </Subheading>
                   </Headline>
-                  <Action className="flex gap-7 flex-col justify-center tablet:flex-row">
+                  <Action className="flex flex-col justify-center gap-7 tablet:flex-row">
                     <Link href="#pricing">
                       <PrimaryButton>Get Started</PrimaryButton>
                     </Link>
@@ -92,7 +92,7 @@ export default function Home() {
           <Wrapper>
             <Container>
               <Column>
-                <Headline className="laptop:flex gap-36">
+                <Headline className="gap-36 laptop:flex">
                   <SectionHeading className="w-full">
                     Hello, I&apos;m Joeward Peralta
                   </SectionHeading>
@@ -109,27 +109,27 @@ export default function Home() {
             </Container>
             <Container>
               <Column className="flex gap-3">
-                <div className="w-full h-[470px] hidden tablet:block">
+                <div className="hidden h-[470px] w-full tablet:block">
                   <Image
-                    className="rounded-md inline-block object-cover object-center w-full h-full"
+                    className="inline-block h-full w-full rounded-md object-cover object-center"
                     src="/img/Joeward Peralta Walking on Railway 1.jpg"
                     alt="Joeward Peralta Walking on Railway with a big smile."
                     width={2000}
                     height={2000}
                   />
                 </div>
-                <div className="w-full h-[470px] tablet:hidden laptop:block">
+                <div className="h-[470px] w-full tablet:hidden laptop:block">
                   <Image
-                    className="rounded-md inline-block object-cover object-center w-full h-full"
+                    className="inline-block h-full w-full rounded-md object-cover object-center"
                     src="/img/Joeward Peralta Professional.jpg"
                     alt="Joeward Peralta Walking on Railway with a big smile."
                     width={2000}
                     height={2000}
                   />
                 </div>
-                <div className="w-full h-[470px] hidden tablet:block">
+                <div className="hidden h-[470px] w-full tablet:block">
                   <Image
-                    className="rounded-md inline-block object-cover object-center w-full h-full"
+                    className="inline-block h-full w-full rounded-md object-cover object-center"
                     src="/img/Joeward Peralta Standing Between Railway.jpg"
                     alt="Joeward Peralta Walking on Railway with a big smile."
                     width={2000}
@@ -154,7 +154,7 @@ export default function Home() {
               </Column>
             </Container>
             <Container>
-              <Column className="flex flex-col gap-12 justify-center laptop:flex-row">
+              <Column className="flex flex-col justify-center gap-12 laptop:flex-row">
                 {servicesData.map((service) => (
                   <Service key={service.id}>
                     <ServiceHead>
@@ -214,7 +214,9 @@ export default function Home() {
                     </ProductBody>
                     <ProductAction>
                       <TertiaryButton>
-                        <Link href={project.website}>View Project</Link>
+                        <Link href={project.website} target="_blank">
+                          View Project
+                        </Link>
                       </TertiaryButton>
                     </ProductAction>
                   </Product>
@@ -345,7 +347,7 @@ export default function Home() {
                 </Form>
               </Column>
 
-              <Column className="rounded-md overflow-hidden mt-6 laptop:mt-0">
+              <Column className="mt-6 overflow-hidden rounded-md laptop:mt-0">
                 <Image
                   className="h-full object-cover"
                   src="/img/hand-woman-holding-mobile-smartphone-with-contact-us.jpg"
@@ -360,7 +362,7 @@ export default function Home() {
 
         <section className="bg-black text-white">
           <Wrapper>
-            <Container className="pb-8 border-b border-white">
+            <Container className="border-b border-white pb-8">
               <Column className="mb-14">
                 <Headline>
                   <SectionHeading>
@@ -408,11 +410,11 @@ export default function Home() {
               </Column>
             </Container>
 
-            <Container className="pt-8 ">
+            <Container className="pt-8">
               <Column className="text-center tablet:basis-1/3 tablet:text-start">
                 <p>&copy; 2024 JLANCE. All rights reserved.</p>
               </Column>
-              <Column className="flex gap-5 justify-center tablet:basis-1/3 tablet:justify-end">
+              <Column className="flex justify-center gap-5 tablet:basis-1/3 tablet:justify-end">
                 <Link
                   href="https://www.facebook.com/joewardperalta.joe/"
                   target="_blank"
